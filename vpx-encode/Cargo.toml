@@ -1,0 +1,17 @@
+[package]
+name = "vpx-encode"
+description = "Rust interface to libvpx encoder"
+repository = "https://github.com/astraw/vpx-encode"
+authors = ["Andrew Straw <strawman@astraw.com>", "Ram Kaniyur <quadrupleslap@gmail.com>"]
+license = "MIT"
+version = "0.4.1"
+edition = "2018"
+
+[dependencies]
+env-libvpx-sys = "5.0.0"
+
+[features]
+vp9 = []
+
+[package.metadata.docs.rs]
+features = [ "vp9" ]
